@@ -17,8 +17,6 @@ nav {
     position: relative;
     width: 192rem;
     height: 108rem;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 nav .arrows .left-arrow {
@@ -30,15 +28,7 @@ nav .arrows .left-arrow {
     left: 7rem;
     top: calc(50% - 3.9rem);
     z-index: 1;
-    border: none;
-    background-color: transparent;
-    transition: 0.2s;
-    
 }
-
-/* nav .arrows .left-arrow:hover{
-    transform: scale(1.2 ,1.2)
-} */
 
 nav .arrows .right-arrow {
     width: 49px;
@@ -48,9 +38,6 @@ nav .arrows .right-arrow {
     right: 7rem;
     top: calc(50% - 3.9rem);
     z-index: 1;
-    border: none;
-    background-color: transparent;
-    transition: 0.2s;
 }
 
 nav .arrows .hover:hover{
@@ -80,7 +67,6 @@ nav ul li .informations p {
 nav ul li .informations a {
     font-size: 3rem;
     font-weight: bold;
-    color: #C50000;
 }
 
 .slide {
@@ -89,8 +75,9 @@ nav ul li .informations a {
     width: 192rem;
     height: 108rem;
     border-radius: 10px;
-    display: none;
-    transition: 0.3s ease-out ;
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s ease-out ;
 }
 
 .slider-1 {
@@ -109,8 +96,25 @@ nav ul li .informations a {
     background-image: url(../images/image-4.png);
 }
 
+.button-red{
+    color: #C50000;
+}
+
+.button-green{
+    color: #D9DD10;
+}
+
+.button-orange{
+    color: #A63A17;
+}
+
+.button-blue{
+    color: #10ACDD;
+}
+
+
 .show {
-    display: flex;
+    opacity: 1;
 }
 
 .opacity {
