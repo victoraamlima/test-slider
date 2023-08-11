@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise</title>
 
     <script type="text/javascript" src="index.js" defer></script>
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
-<body>
-    <nav>
-        <div class="arrows">
-            <a class="left-arrow opacity" onclick="moveSlideLeft()">
-            </a>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="arrows">
+        <a class="arrow left-arrow disabled" onclick="moveSlideLeft()"> </a>
 
-            <a class="right-arrow hover" onclick="moveSlideRight()">
-            </a>
-        </div>
+        <a class="arrow right-arrow" onclick="moveSlideRight()"> </a>
+      </div>
 
-        <ul>
-            <li class="slide slider-1 show">
+      <ul>
+        <li class="slide slider-1 show">
+          <div class="informations">
+            <h2>Image title 1</h2>
 
-                <div class="informations">
-                    <h2>Image title 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              quis egestas ex, a elementum est. Mauris auctor nunc quis erat
+              aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
+              consequat a ipsum in, ultrices volutpat felis. Duis in nibh a
+              tellus sodales finibus. Fusce libero turpis, sodales eu facilisis
+              et, tristique vitae nibh. Praesent arcu eros, condimentum a
+              interdum in, semper in ante. Suspendisse dolor urna, volutpat a e
+            </p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum
-                        est. Mauris auctor nunc quis erat aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
-                        consequat a ipsum in, ultrices volutpat felis. Duis in nibh a tellus sodales finibus. Fusce
-                        libero turpis, sodales eu facilisis et, tristique vitae nibh. Praesent arcu eros, condimentum a
-                        interdum in, semper in ante. Suspendisse dolor urna, volutpat a e</p>
+            <a href="" class="button-red">More info</a>
+          </div>
+        </li>
+        <li class="slide slider-2">
+          <div class="informations">
+            <h2>Image title 2</h2>
 
-                    <a href="" class="button-red">More info</a>
-                </div>
-            </li>
-            <li class="slide slider-2">
-               
-                <div class="informations">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              quis egestas ex, a elementum est. Mauris auctor nunc quis erat
+              aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
+              consequat a ipsum in, ultrices volutpat felis. Duis in nibh a
+              tellus sodales finibus. Fusce libero turpis, sodales eu facilisis
+              et, tristique vitae nibh. Praesent arcu eros, condimentum a
+              interdum in, semper in ante. Suspendisse dolor urna, volutpat a e
+            </p>
 
-                    <h2>Image title 2</h2>
+            <a href="" class="button-green">More info</a>
+          </div>
+        </li>
+        <li class="slide slider-3">
+          <div class="informations">
+            <h2>Image title 3</h2>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum
-                        est. Mauris auctor nunc quis erat aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
-                        consequat a ipsum in, ultrices volutpat felis. Duis in nibh a tellus sodales finibus. Fusce
-                        libero turpis, sodales eu facilisis et, tristique vitae nibh. Praesent arcu eros, condimentum a
-                        interdum in, semper in ante. Suspendisse dolor urna, volutpat a e</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              quis egestas ex, a elementum est. Mauris auctor nunc quis erat
+              aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
+              consequat a ipsum in, ultrices volutpat felis. Duis in nibh a
+              tellus sodales finibus. Fusce libero turpis, sodales eu facilisis
+              et, tristique vitae nibh. Praesent arcu eros, condimentum a
+              interdum in, semper in ante. Suspendisse dolor urna, volutpat a e
+            </p>
 
-                    <a href="" class="button-green">More info</a>
-                </div>
-            </li>
-            <li class="slide slider-3">
+            <a href="" class="button-orange">More info</a>
+          </div>
+        </li>
+        <li class="slide slider-4">
+          <div class="informations">
+            <h2>Image title 4</h2>
 
-                <div class="informations">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              quis egestas ex, a elementum est. Mauris auctor nunc quis erat
+              aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
+              consequat a ipsum in, ultrices volutpat felis. Duis in nibh a
+              tellus sodales finibus. Fusce libero turpis, sodales eu facilisis
+              et, tristique vitae nibh. Praesent arcu eros, condimentum a
+              interdum in, semper in ante. Suspendisse dolor urna, volutpat a e
+            </p>
 
-                    <h2>Image title 3</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum
-                        est. Mauris auctor nunc quis erat aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
-                        consequat a ipsum in, ultrices volutpat felis. Duis in nibh a tellus sodales finibus. Fusce
-                        libero turpis, sodales eu facilisis et, tristique vitae nibh. Praesent arcu eros, condimentum a
-                        interdum in, semper in ante. Suspendisse dolor urna, volutpat a e</p>
-
-                    <a href="" class="button-orange">More info</a>
-                </div>
-            </li>
-            <li class="slide slider-4">
-                
-                <div class="informations">
-
-                    <h2>Image title 4</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum
-                        est. Mauris auctor nunc quis erat aliquet, at eleifend augue pulvinar. Phasellus nulla eros,
-                        consequat a ipsum in, ultrices volutpat felis. Duis in nibh a tellus sodales finibus. Fusce
-                        libero turpis, sodales eu facilisis et, tristique vitae nibh. Praesent arcu eros, condimentum a
-                        interdum in, semper in ante. Suspendisse dolor urna, volutpat a e</p>
-
-                    <a href="" class="button-blue">More info</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-</body>
+            <a href="" class="button-blue">More info</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
