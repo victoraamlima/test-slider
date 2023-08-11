@@ -1,122 +1,171 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #faebd7;
 }
 
-nav ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+main {
+  position: relative;
+  width: 192rem;
+  height: 108rem;
+  margin: 2rem;
 }
 
-nav {
-    position: relative;
-    width: 192rem;
-    height: 108rem;
+main .arrows .arrow {
+  width: 4.9rem;
+  height: 7.8rem;
+  background-image: url(../images/left-arrow.png);
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 3.9rem);
+  z-index: 1;
+  transition: 0.2s ease-in-out;
 }
 
-nav .arrows .left-arrow {
-    width: 49px;
-    height: 78px;
-    background-image: url(../images/left-arrow.png);
-    background-size: cover;
-    position: absolute;
-    left: 7rem;
-    top: calc(50% - 3.9rem);
-    z-index: 1;
+main .arrows .left-arrow {
+  left: 7rem;
 }
 
-nav .arrows .right-arrow {
-    width: 49px;
-    height: 78px;
-    background-image: url(../images/right-arrow.png);
-    position: absolute;
-    right: 7rem;
-    top: calc(50% - 3.9rem);
-    z-index: 1;
+main .arrows .right-arrow {
+  rotate: 180deg;
+  right: 7rem;
 }
 
-nav .arrows .hover:hover{
-    transform: scale(1.2 ,1.2)
+main .arrows .arrow:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
-nav ul li .informations {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 62rem;
-    height: 70rem;
-    padding: 6.5rem 6rem;
-    margin-left: 18rem;
+main .arrows .disabled:hover {
+  transform: scale(1, 1);
+  cursor: default;
 }
 
-nav ul li .informations h2 {
-    font-size: 5rem;
+main .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 192rem;
+  height: 108rem;
+  border-radius: 1rem;
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.7);
 }
 
-nav ul li .informations p {
-    font-size: 2.5rem;
-    line-height: 35px;
+main ul li .informations {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 62rem;
+  gap: 6.5rem;
+  padding: 6.5rem 6rem;
+  margin-left: 18rem;
 }
 
-nav ul li .informations a {
-    font-size: 3rem;
-    font-weight: bold;
+main ul li .informations h2 {
+  font-size: 5rem;
 }
 
-.slide {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 192rem;
-    height: 108rem;
-    border-radius: 10px;
-    position: absolute;
-    opacity: 0;
-    transition: 0.4s ease-out ;
+main ul li .informations p {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+main ul li .informations a {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .slider-1 {
-    background-image: url(../images/image-1.png);
+  background-image: url(../images/image-1.png);
 }
 
 .slider-2 {
-    background-image: url(../images/image-2.png);
+  background-image: url(../images/image-2.png);
 }
 
 .slider-3 {
-    background-image: url(../images/image-3.png);
+  background-image: url(../images/image-3.png);
 }
 
 .slider-4 {
-    background-image: url(../images/image-4.png);
+  background-image: url(../images/image-4.png);
 }
 
-.button-red{
-    color: #C50000;
+.button-red {
+  color: #c50000;
 }
 
-.button-green{
-    color: #D9DD10;
+.button-green {
+  color: #d9dd10;
 }
 
-.button-orange{
-    color: #A63A17;
+.button-orange {
+  color: #a63a17;
 }
 
-.button-blue{
-    color: #10ACDD;
+.button-blue {
+  color: #10acdd;
 }
 
-
-.show {
-    opacity: 1;
+main .show {
+  opacity: 1;
 }
 
-.opacity {
-    opacity: 0.6;
+main .disabled {
+  opacity: 0.6;
+}
+
+@media (max-width: 1960px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1590px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  main {
+    position: unset;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  main .slide {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    align-items: center;
+  }
+
+  main ul li .informations {
+    margin-left: 0;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    width: 40rem;
+    gap: 5rem;
+  }
 }
